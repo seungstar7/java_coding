@@ -1,13 +1,12 @@
-package programmers.level_2;
+package baekJoon.gold;
 
 import java.util.Arrays;
-import java.util.Stack;
 
-public class Level_2_003 {
+public class gold_001 {
 
 
     public static void main(String[] args){
-        Level_2_003 sol =  new Level_2_003();
+        gold_001 sol =  new gold_001();
         /**
          *
          *  2
@@ -24,24 +23,7 @@ public class Level_2_003 {
         for(int i = 0; i < dice.length; i++){
             dice[i] = i+1;
         }
-//        Arrays.sort(dice);
-//        System.out.println(Arrays.toString(dice));
-//        Long getN = Long.valueOf(n);
-//        Long bigN = getN * getN;
-//        Long sum;
-//        sum = Long.valueOf(dice[0]) * (bigN-getN);
-//        sum += Long.valueOf(dice[1]) * getN;
-//        sum*=4;
-//        Long center = Long.valueOf(n)-2; //센터값
-//        sum += Long.valueOf(dice[2]) * 4;  // 모서리 => 제일 큰값
-//        sum += Long.valueOf(dice[1]) * center * 4; //벽 =>
-//        sum += Long.valueOf(dice[0]) * (center * center); // 중앙값
-//
-//        System.out.println(sum);
-//        sol.solution(n,dice);
 
-
-//
         int[] s1 = {50,50,50,50,50,50};
         int[] s2 = {1, 2, 3, 4, 5, 6};
         int[] s3 = {1, 1, 1, 1, 50, 1};
@@ -52,7 +34,7 @@ public class Level_2_003 {
         sol.solution(3,s2);
         sol.solution(10,s3);
         sol.solution(5,s4);
-        sol.solution(10,s5); //56모자람
+        sol.solution(10,s5);
         sol.solution(1000000,s6);
     }
     public void solution(int n,int[] dice) {
